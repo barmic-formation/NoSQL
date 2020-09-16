@@ -15,12 +15,6 @@ Ces propriété posent des problèmes de montée en charge. En effet elles deman
 
 Google est le premier a avoir à la fois rencontré le problème, investi pour le contourner et publié ses travaux. Leurs objectifs sont simples. Ils ne peuvent plus faire grossir leurs serveurs de bases de données, ils ne veulent pas investir dans des mainframes, mais veulent utiliser du _commodity hardware_.
 
-Théorème CAP:
-
- - Cohérence
- - Avaibility
- - Partitionnability
-
 ## Partitionnement
 
 La solution trouvée par Google est simple : « diviser pour mieux régner ». On va séparer les données en partition. Un serveur physique pourra être responsable d'une ou plusieurs partition, mais les partitions restent de taille acceptable.
@@ -34,6 +28,12 @@ Chaque partition est indépendante. Il ne faut pas qu'une règle de gestion s'ap
 Le comportement que l'on cherche à maximiser :
 - lors des lectures → requêter une seule partition
 - lors des écritures → chaque écriture s'exécute sur une partition différentes pour utiliser tous les serveurs de notre base de données
+
+Théorème CAP:
+
+ - Cohérence
+ - Avaibility
+ - Partitionnability
 
 ## Map/reduce
 
