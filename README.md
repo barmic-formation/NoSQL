@@ -8,3 +8,5 @@ Formation NoSQL pour l'université de Montpelier
 - [TP l'après-midi](TP.md)
 
 ## Vendredi 16 octobre
+
+_TBD_
