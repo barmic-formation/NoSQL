@@ -3,10 +3,10 @@
 ## Problématique
 
 Historiquement on utilise les SGBDR qui ont les propriétés ACID :
-- Atomicité : on peut effectuer des actions en mode « tout ou rien ». C'est les transactions : si une transaction échoue, on _rollback_ ce qui avait déjà était modifié.
-- Cohérence : l'état de la base de données est cohérent. Quelque soit la manière d'effectuer une requête à un instant donné le résultat sera identique.
-- Isolation : chaque requête s'exécute comme si elle était seule sur le système. C'est aussi matérialisé par les transactions, mais aussi les niveaux d'isolation.
-- Durabilité : après commit la données est stockée sur disque
+- *Atomicité* : on peut effectuer des actions en mode « tout ou rien ». C'est les transactions : si une transaction échoue, on _rollback_ ce qui avait déjà était modifié.
+- *Cohérence* : l'état de la base de données est cohérent. Quelque soit la manière d'effectuer une requête à un instant donné le résultat sera identique.
+- *Isolation* : chaque requête s'exécute comme si elle était seule sur le système. C'est aussi matérialisé par les transactions, mais aussi les niveaux d'isolation.
+- *Durabilité* : après commit la données est stockée sur disque
 
 Ces propriété posent des problèmes de montée en charge. En effet elles demandent à la fois que l'état complet des données soit maitrisé au moment de l'exécution d'une requête, et en plus elles demandent de sérialiser les requêtes pour garantir un état cohérent quelque soit le point de la base de données que l'on regarde. C'est problématique quand cet état ne peux plus entrer dans la mémoire vive d'un serveur. Dis autrement :
 
