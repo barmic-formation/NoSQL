@@ -31,10 +31,6 @@ Le comportement que l'on cherche à maximiser :
 
 ### Théorème CAP
 
- - Cohérence
- - Avaibility
- - Partitionnability
-
 ![triangle](triangle_CAP.png)
 
 ## Map/reduce
