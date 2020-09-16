@@ -29,11 +29,13 @@ Le comportement que l'on cherche à maximiser :
 - lors des lectures → requêter une seule partition
 - lors des écritures → chaque écriture s'exécute sur une partition différentes pour utiliser tous les serveurs de notre base de données
 
-Théorème CAP:
+### Théorème CAP
 
  - Cohérence
  - Avaibility
  - Partitionnability
+
+![triangle](triangle_CAP.png)
 
 ## Map/reduce
 
