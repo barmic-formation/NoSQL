@@ -33,7 +33,7 @@ Le comportement que l'on cherche à maximiser :
 
 ![triangle](triangle_CAP.png)
 
-## Map/reduce
+## Map/Reduce
 
 Traitement _full scan_
 - des exemples sur quoi faire en sur le map et sur le reduce
