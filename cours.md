@@ -35,5 +35,9 @@ Le comportement que l'on cherche à maximiser :
 
 ## Map/Reduce
 
-Traitement _full scan_
-- des exemples sur quoi faire en sur le map et sur le reduce
+Lorsque l'on utilise du partitionnement il n'y a pas de difficulté à faire les calculs que l'on souhaite tant que l'on reste au sein d'une seule partition. Par contre il arrive de devoir travailler sur l'ensemble des données de la base. Pour cela on utilise Map/Reduce.
+
+2 étapes :
+
+- `map` effectue un calul au sein d'une partition (ou d'une partie d'une partition) et retourne un élément
+- `reduce` prends les éléments retournés par `map` et les combine pour donner un unique dernier résultat
