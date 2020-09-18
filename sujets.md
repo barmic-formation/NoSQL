@@ -2,6 +2,15 @@
 
 Voici une liste de sujets possibles pour le rendu du 16 octobre 2020.
 
+Décrire ce qu'il y a à faire
+- une présentation
+- choix de la clef de partitionnement
+  - Comment elle a était choisie ?
+  - Quels sont les impacts ?
+  - Qu'est-ce qui a était prévu ?
+- Montrer ce que donne le partitionnement sur des exemples
+- Montrer pour des exemples de requêtes pertinentes
+
 ## Sujet 1: stock articles Amazon
 
 Exemple de données :
