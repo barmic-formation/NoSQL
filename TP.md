@@ -2,7 +2,7 @@
 
 ## Objets trouvés à la SNCF
 
-Données : [objets trouvés à la SNCF](https://ressources.data.sncf.com/explore/dataset/objets-trouves-restitution/information/?sort=date&dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJiYXIiLCJmdW5jIjoiQ09VTlQiLCJjb2xvciI6InJhbmdlLWN1c3RvbSIsInNjaWVudGlmaWNEaXNwbGF5Ijp0cnVlfV0sInhBeGlzIjoiZGF0ZSIsIm1heHBvaW50cyI6IiIsInRpbWVzY2FsZSI6InllYXIiLCJzb3J0IjoiIiwic2VyaWVzQnJlYWtkb3duIjoiZ2Nfb2JvX3R5cGVfYyIsInNlcmllc0JyZWFrZG93blRpbWVzY2FsZSI6Im1vbnRoIiwic3RhY2tlZCI6Im5vcm1hbCIsImNvbmZpZyI6eyJkYXRhc2V0Ijoib2JqZXRzLXRyb3V2ZXMtcmVzdGl0dXRpb24iLCJvcHRpb25zIjp7InNvcnQiOiJkYXRlIn19fV0sInRpbWVzY2FsZSI6IiIsImRpc3BsYXlMZWdlbmQiOnRydWUsImFsaWduTW9udGgiOnRydWV9)
+Données (uniquement pour information) : [objets trouvés à la SNCF](https://ressources.data.sncf.com/explore/dataset/objets-trouves-restitution/information/?sort=date&dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJiYXIiLCJmdW5jIjoiQ09VTlQiLCJjb2xvciI6InJhbmdlLWN1c3RvbSIsInNjaWVudGlmaWNEaXNwbGF5Ijp0cnVlfV0sInhBeGlzIjoiZGF0ZSIsIm1heHBvaW50cyI6IiIsInRpbWVzY2FsZSI6InllYXIiLCJzb3J0IjoiIiwic2VyaWVzQnJlYWtkb3duIjoiZ2Nfb2JvX3R5cGVfYyIsInNlcmllc0JyZWFrZG93blRpbWVzY2FsZSI6Im1vbnRoIiwic3RhY2tlZCI6Im5vcm1hbCIsImNvbmZpZyI6eyJkYXRhc2V0Ijoib2JqZXRzLXRyb3V2ZXMtcmVzdGl0dXRpb24iLCJvcHRpb25zIjp7InNvcnQiOiJkYXRlIn19fV0sInRpbWVzY2FsZSI6IiIsImRpc3BsYXlMZWdlbmQiOnRydWUsImFsaWduTW9udGgiOnRydWV9)
 
 Quelques exemples de données :
 
@@ -28,7 +28,7 @@ Considérez que l'on vous donne en temps réel les nouveaux objets trouvés.
 
 ## Disponibilité des places Vélomagg
 
-Données : [Disponibilité des places Vélomagg en temps réel](https://data.montpellier3m.fr/dataset/disponibilite-des-places-velomagg-en-temps-reel)
+Données (uniquement pour information) : [Disponibilité des places Vélomagg en temps réel](https://data.montpellier3m.fr/dataset/disponibilite-des-places-velomagg-en-temps-reel)
 
 Quelques exemple de données :
 

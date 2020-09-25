@@ -4,9 +4,9 @@ Formation NoSQL pour l'université de Montpelier
 
 ## Vendredi 25 novembre
 
-- [Cours le matin](cours.md)
-- [TP l'après-midi](TP.md)
+- [Cours partitionnement et map/reduce](cours.md)
+- [TP](TP.md)
 
 ## Vendredi 16 octobre
 
-_TBD_
+- [Sujets](sujets.md)
