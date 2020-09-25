@@ -42,12 +42,20 @@ Exemple de données :
 
 ## Sujet 4: articles wikipedia
 
+Exemple de données :
+
 | lien de page | langue | titre | contenu | création |
 |---|---|---|---|---|
 |https://fr.wikipedia.org/wiki/Fors_de_B%C3%A9arn|FR|Fors de Béarn|_Les Fors de Béarn constituent…_|11 février 2007 11h18|
 |https://es.wikipedia.org/wiki/Fueros_de_Bearne|ES|Fueros de Bearne|_Se denomina Fueros de Bearne (en francés Fors de Béarn, en occitano Fòrs de Bearn)…_|19 août 2006 18h02|
 |https://fr.wikipedia.org/wiki/P%C3%ADcaro|FR|Pícaro|_Un pícaro est le héros d’un roman picaresque…_|19 octobre 2005 16h29|
 
-## Sujet 5:
+## Sujet 5: transaction banquaire
 
-|
+Exemple de données :
+
+| montant | date | compte origine | compte destinataire | libellé | moyen |
+|---|---|---|---|---|---|---|
+| 50 € | 25 septembre 2020 10h42 | 9802313c | 7ea6d8a5 | essence | carte banquaire |
+| 25.13 € | 23 septembre 2020 10h42 | 9802313c | 6c6a60ad | livre | carte banquaire |
+| 125.50 € | 15 septembre 2020 17h26 | 9802313c | d26a63d1 | materiel informatique | chèque |
