@@ -32,7 +32,7 @@ Le comportement que l'on cherche à maximiser :
 
 ### Théorème CAP
 
-![triangle](triangle_CAP.png)
+![tableau3](tableau3.png)
 
 ## Map/Reduce
 
