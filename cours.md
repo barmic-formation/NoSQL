@@ -32,19 +32,19 @@ Le comportement que l'on cherche à maximiser :
 
 ### Théorème CAP
 
-![tableau3](tableau3.png)
-
-## Map/Reduce
-
-Lorsque l'on utilise du partitionnement il n'y a pas de difficulté à faire les calculs que l'on souhaite tant que l'on reste au sein d'une seule partition. Par contre il arrive de devoir travailler sur l'ensemble des données de la base. Pour cela on utilise Map/Reduce.
-
-2 étapes :
-
-- `map` effectue un calul au sein d'une partition (ou d'une partie d'une partition) et retourne un élément
-- `reduce` prends les éléments retournés par `map` et les combine pour donner un unique dernier résultat
-
-![tableau1](tableau1.png)
-
-# Exercice d'exemple
-
-![tableau2](tableau2.png)
+![tableau3](img/tableau3.png)
+img/
+## Map/Reducimg/e
+img/
+Lorsque l'onimg/ utilise du partitionnement il n'y a pas de difficulté à faire les caimg/lculs que l'on souhaite tant que l'on reste au sein d'une seule partitimg/ion. Par contre il arrive de devoir travailler sur l'ensemble des données img/de la base. Pour cela on utilise Map/Reduce.
+img/
+2 étapes :img/
+img/
+- `map` effeimg/ctue un calul au sein d'une partition (ou d'une partie d'une partition) eimg/t retourne un élément
+- `reduce` pimg/rends les éléments retournés par `map` et les combine pour donner un unimg/ique dernier résultat
+img/
+![tableau1](img/tableau1.png)
+img/
+# Exercice dimg/'exemple
+img/
+![tableau2](img/tableau2.png)
