@@ -29,6 +29,7 @@ Le comportement que l'on cherche à maximiser :
 - lors des lectures → requêter une seule partition
 - lors des écritures → chaque écriture s'exécute sur une partition différentes pour utiliser tous les serveurs de notre base de données
 
+
 ### Théorème CAP
 
 ![triangle](triangle_CAP.png)
@@ -41,3 +42,9 @@ Lorsque l'on utilise du partitionnement il n'y a pas de difficulté à faire les
 
 - `map` effectue un calul au sein d'une partition (ou d'une partie d'une partition) et retourne un élément
 - `reduce` prends les éléments retournés par `map` et les combine pour donner un unique dernier résultat
+
+![tableau1](tableau1.png)
+
+# Exercice d'exemple
+
+![tableau2](tableau2.png)
