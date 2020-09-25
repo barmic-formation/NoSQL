@@ -55,7 +55,7 @@ Exemple de données :
 Exemple de données :
 
 | montant | date | compte origine | compte destinataire | libellé | moyen |
-|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|
 | 50 € | 25 septembre 2020 10h42 | 9802313c | 7ea6d8a5 | essence | carte banquaire |
 | 25.13 € | 23 septembre 2020 10h42 | 9802313c | 6c6a60ad | livre | carte banquaire |
 | 125.50 € | 15 septembre 2020 17h26 | 9802313c | d26a63d1 | materiel informatique | chèque |
