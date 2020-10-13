@@ -74,17 +74,17 @@ Membres:
 ## Groupe 2: Sujet 4 - Articles wikipedia
 
 Membres:
-1. Mannuel theron
+1. Mannuel THERON
 2. Alexandre
-3. Melody cassan
-4. Karim salah salah
-5. Jonathan moreno
+3. Melody CASSAN
+4. Karim SALAH SALAH
+5. Jonathan MORENO
 6. Sofiane
 
 ## Groupe 3: Sujet 4 - Articles wikipedia
 
 Membres:
-1. Melodie CASSAN,
+1. Melodie CASSAN
 2. Alexandre KLEIN
 3. Emmanuelle THERON
 4. Karim SALAH SALAH
