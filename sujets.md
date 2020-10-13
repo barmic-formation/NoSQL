@@ -74,12 +74,12 @@ Membres:
 ## Groupe 2: Sujet 4 - Articles wikipedia
 
 Membres:
-1. mannuel theron,
+1. Mannuel theron
 2. Alexandre
 3. Melody cassan
-4. karim salah salah
-5. jonathan moreno
-6. sofiane
+4. Karim salah salah
+5. Jonathan moreno
+6. Sofiane
 
 ## Groupe 3: Sujet 4 - Articles wikipedia
 
@@ -104,9 +104,9 @@ Membres:
 ## Groupe 5: Sujet 3 - Messages twitter
 
 Membres:
-1. ANDRAUD Amélia
-2. GICQUEL Adrien
-3. GAUTHIER Nicolas
-4. PODEROSO Aurore
-5. PORTE Tiphaine
+1. Amélia ANDRAUD
+2. Adrien GICQUEL
+3. Nicolas GAUTHIER
+4. Aurore PODEROSO
+5. Tiphaine PORTE
 
