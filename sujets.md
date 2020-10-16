@@ -17,8 +17,8 @@ Exemple de données :
 
 | date | point de vente | montant total | nombre articles | détails |
 |---|---|---|---|---|
-| 18 septembre 2020 | | 12€37 | 2 | [2 ampoules, un tournevis] |
-| 15 septembre 2020 | | 24€50 | 3 | [yaourt, fromage] |
+| 18 septembre 2020 | | 12€37 | 3 | [2 ampoules, un tournevis] |
+| 15 septembre 2020 | | 24€50 | 2 | [yaourt, fromage] |
 
 ## Sujet 2: Scores jeux videos
 
