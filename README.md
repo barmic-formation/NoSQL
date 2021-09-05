@@ -2,11 +2,13 @@
 
 Formation NoSQL pour l'université de Montpelier
 
-## Vendredi 25 novembre
+## Mercredi 22 septembre
 
-- [Cours partitionnement et map/reduce](cours.md)
-- [TP](TP.md)
+- matin : [Cours partitionnement et map/reduce](cours/sharding.md)
+- après-midi : [Cours _eventual consistency_](cours/eventual_consistency.md)
 
-## Vendredi 16 octobre
+## Jeudi 23 septembre
 
-- [Sujets](sujets.md)
+- matin : [mongo](tp/mongo.md) & [cassandra](tp/cassandra.md)
+- après-midi : [Sujets](sujets.md)
+- après-midi : _devoir sur table_
