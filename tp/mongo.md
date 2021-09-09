@@ -2,7 +2,7 @@
 
 ## Modèle
 
-- nom de la vidéo
+> - nom de la vidéo
 - durée
 - nombre de vues
 - chaine
