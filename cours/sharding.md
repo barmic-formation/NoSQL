@@ -47,4 +47,15 @@ Lorsque l'on utilise du partitionnement il n'y a pas de difficulté à faire les
 
 # Exercice d'exemple
 
-![tableau2](img/tableau2.png)
+| article | type | date | stock | prix | description |
+|---|---|---|---|---|---|
+| aspirateur Rowenta BPL24 | aspirateur | 25 septembre | 142 | 65 | aspirateur trop trop bien |
+| montre Lexibook | montre | 25 septembre | 422 | 10 | montre de ouf |
+| montre Lexibook | montre | 24 septembre | 500 | 10 | montre de ouf |
+
+- choisir une clef de partitionnement
+- requêtes possibles:
+  - quel est le stock d'aspirateur rowenta aujourd'hui
+  - prix moyen des articles
+  - quels sont les articles bientôt en rupture de stock
+  - comment évolue le prix des montres
