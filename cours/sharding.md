@@ -54,7 +54,7 @@ Lorsque l'on utilise du partitionnement il n'y a pas de difficulté à faire les
 | montre Lexibook | montre | 24 septembre | 500 | 10 | montre de ouf |
 
 - choisir une clef de partitionnement
-- requêtes possibles:
+- requêtes possibles :
   - quel est le stock d'aspirateur rowenta aujourd'hui ?
   - prix moyen des articles ?
   - quels sont les articles bientôt en rupture de stock ?
