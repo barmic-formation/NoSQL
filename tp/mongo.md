@@ -3,14 +3,14 @@
 ## Modèle
 
 > - nom de la vidéo
-- durée
-- nombre de vues
-- chaine
-- date
-- description
-- [commentaires]
-- [tags]
-- …
+> - durée
+> - nombre de vues
+> - chaine
+> - date
+> - description
+> - [commentaires]
+> - [tags]
+> - …
 
 
 ## Questions
