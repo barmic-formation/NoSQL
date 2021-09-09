@@ -55,7 +55,7 @@ Lorsque l'on utilise du partitionnement il n'y a pas de difficulté à faire les
 
 - choisir une clef de partitionnement
 - requêtes possibles:
-  - quel est le stock d'aspirateur rowenta aujourd'hui
-  - prix moyen des articles
-  - quels sont les articles bientôt en rupture de stock
-  - comment évolue le prix des montres
+  - quel est le stock d'aspirateur rowenta aujourd'hui ?
+  - prix moyen des articles ?
+  - quels sont les articles bientôt en rupture de stock ?
+  - comment évolue le prix des montres ?
