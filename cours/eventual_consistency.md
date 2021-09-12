@@ -2,7 +2,8 @@
 
 - Problématique du partitionnement
 - ACID → consistence
-- exemple:
+- CAP
+- exemples:
   - stream youtube
   - twitch
   - facebook likes

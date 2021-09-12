@@ -45,6 +45,44 @@ Lorsque l'on utilise du partitionnement il n'y a pas de difficulté à faire les
 
 ![tableau1](img/tableau1.png)
 
+### Problématiques
+
+Attention les calculs organisés en `map`/`reduce` doivent être organisés avec précaution. Par exemple on essaiera de n'effectuer des divisions qu'au dernier moments.
+
+**Exemple**:
+
+Si nous avons les 3 shards suivant :
+
+Shard 1 :
+- ligne 1 → 0
+- ligne 2 → 3
+- ligne 3 → 1
+- ligne 4 → 2
+- ligne 5 → 0
+- ligne 6 → 4
+- ligne 7 → 3
+
+Shard 2 :
+- ligne 1 → 0
+- ligne 2 → 4
+- ligne 3 → 2
+- ligne 4 → 0
+- ligne 5 → 0
+- ligne 6 → 1
+- ligne 7 → 0
+
+Shard 3 :
+- ligne 1 → 4
+- ligne 2 → 3
+- ligne 3 → 2
+- ligne 4 → 1
+- ligne 5 → 0
+- ligne 6 → 4
+- ligne 7 → 3
+
+Quel est la moyenne de toutes les lignes ?
+
+
 # Exercice d'exemple
 
 | article | type | date | stock | prix | description |
