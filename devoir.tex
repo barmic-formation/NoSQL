@@ -1,6 +1,6 @@
 \documentclass[12pt,letterpaper]{article}
 \usepackage{fullpage}
-\usepackage[top=2cm, bottom=4.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[top=1.5cm, bottom=4.5cm, left=1.5cm, right=1.5cm]{geometry}
 \usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
 \usepackage{lastpage}
 \usepackage{enumerate}
@@ -10,8 +10,13 @@
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage{hyperref}
+\usepackage{fontspec}
+\setmainfont[
+    Ligatures=TeX,
+    Path=/usr/share/fonts/truetype/dejavu/
+]{DejaVuSans.ttf}
 
-\hypersetup{%
+\hypersetup{
   colorlinks=true,
   linkcolor=blue,
   linkbordercolor={0 0 1}
@@ -33,16 +38,12 @@
 \setlength{\parindent}{0.0in}
 \setlength{\parskip}{0.05in}
 
-% Edit these as appropriate
 \newcommand\course{Base de données NoSQL}
-\newcommand\hwnumber{1}                  % <-- homework number
-%\newcommand\NetIDa{netid19823}           % <-- NetID of person #1
-%\newcommand\NetIDb{netid12038}           % <-- NetID of person #2 (Comment this line out for problem sets)
+\newcommand\hwnumber{1}
 
 \pagestyle{fancyplain}
 \headheight 35pt
 \lhead{Base de données NoSQL}
-%\lhead{\NetIDa\\\NetIDb}                 % <-- Comment this line out for problem sets (make sure you are person #1)
 \chead{\textbf{\Large Devoir \hwnumber}}
 \rhead{\today}
 \lfoot{}
@@ -68,13 +69,13 @@ Données (uniquement pour information)~: \url{https://ressources.data.sncf.com}
 
 Quelques exemples de données~:
 
-\begin{tabular}{ | c | c | c | c | c | c |}
+\begin{tabular}{| c | c | c | c | c | c |}
 \hline
 Date & Type d'objets & Nature d'objets & Gare & Code UIC \\ \hline
-16 sept 21 14:57 & Bagagerie & Valise, sac sur roulettes & Cherbourg & 0087444877 \\ \hline
-16 sept 21 14:51 & Vêtements, chaussures & Autres vêtements & Cherbourg & 0087444877 \\ \hline
-16 sept 21 14:50 & Vêtements, chaussures & Chaussures & Montparnasse & 0087391003 \\ \hline
-16 sept 21 14:47 & Optique & Lunettes & Montparnasse & 0087391003 \\ \hline
+16 14:57 & Bagagerie & Valise, sac sur roulettes & Cherbourg & 0087444877 \\ \hline
+16 14:51 & Vêtements, chaussures & Autres vêtements & Cherbourg & 0087444877 \\ \hline
+16 14:50 & Vêtements, chaussures & Chaussures & Montparnasse & 0087391003 \\ \hline
+16 14:47 & Optique & Lunettes & Montparnasse & 0087391003 \\ \hline
 \end{tabular}
 
 Considérez que l'on vous donne en temps réel les nouveaux objets trouvés.
@@ -103,7 +104,7 @@ Données (uniquement pour information)~:\\
 
 Quelques exemple de données~:
 
-\begin{tabular}{ | c | c | c | c | c | c | c |}
+\begin{tabular}{| c | c | c | c | c | c | c |}
 \hline
 nom & identifiant & latitude & longitude & occupées & libres & total \\ \hline
 Jules Ferry - Saint-Roch & 001 & 43.605366 & 3.881346 & 10 & 2 & 12 \\ \hline
