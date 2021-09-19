@@ -8,10 +8,10 @@ Quelques exemples de données :
 
 | Date | Type d'objets | Nature d'objets | Gare | Code UIC | Date et heure de restitution |
 |---|---|---|---|---|---|
-| 16 septembre 2020 14:57 | Bagagerie: sacs, valises, cartables | Valise, sac sur roulettes | Cherbourg | 0087444877 | |
-| 16 septembre 2020 14:51 | Vêtements, chaussures | Autres vêtements | Cherbourg | 0087444877 | |
-| 16 septembre 2020 14:50 | Vêtements, chaussures | Chaussures (autre que chaussures de ski et patins) | Paris Montparnasse | 0087391003 | |
-| 16 septembre 2020 14:47 | Optique | Lunettes | Paris Montparnasse | 0087391003 | |
+| 16 sept 2020 14:57 | Bagagerie: sacs, valises, cartables | Valise, sac sur roulettes | Cherbourg | 0087444877 | |
+| 16 sept 2020 14:51 | Vêtements, chaussures | Autres vêtements | Cherbourg | 0087444877 | |
+| 16 sept 2020 14:50 | Vêtements, chaussures | Chaussures (autre que chaussures de ski et patins) | Paris Montparnasse | 0087391003 | |
+| 16 sept 2020 14:47 | Optique | Lunettes | Paris Montparnasse | 0087391003 | |
 
 Considérez que l'on vous donne en temps réel les nouveaux objets trouvés.
 
@@ -54,13 +54,13 @@ Quelques exemple de données :
 
 | nom | identifiant | latitude | longitude | places occupées | places libres | places total |
 |---|---|---|---|---|---|---|
-| 001 Rue Jules Ferry - Gare Saint-Roch | 001 | 43.605366 | 3.881346 | 10 | 2 | 12 |
-| 002 Comédie | 002 | 43.608148 | 3.878778 | 9 | 15 | 24 |
-| 003 Esplanade | 003 | 43.609478 | 3.881293 | 18 | 14 | 32 |
-| 004 Hôtel de Ville | 004 | 43.599088 | 3.894866 | 6 | 10 | 16 |
-| 005 Corum | 005 | 43.613989 | 3.881600 | 11 | 1 | 12 |
-| 006 Place Albert 1er - St Charles | 006 | 43.616768 | 3.873375 | 16 | 15 | 31 |
-| 007 Foch | 007 | 43.610989 | 3.873345 | 7 | 1 | 8 |
+| Rue Jules Ferry - Gare Saint-Roch | 001 | 43.605366 | 3.881346 | 10 | 2 | 12 |
+| Comédie | 002 | 43.608148 | 3.878778 | 9 | 15 | 24 |
+| Esplanade | 003 | 43.609478 | 3.881293 | 18 | 14 | 32 |
+| Hôtel de Ville | 004 | 43.599088 | 3.894866 | 6 | 10 | 16 |
+| Corum | 005 | 43.613989 | 3.881600 | 11 | 1 | 12 |
+| Place Albert 1er - St Charles | 006 | 43.616768 | 3.873375 | 16 | 15 | 31 |
+| Foch | 007 | 43.610989 | 3.873345 | 7 | 1 | 8 |
 
 Considérez que toutes les minutes, vous recevez la liste complète à jour.
 
@@ -90,17 +90,15 @@ Pour bien comprendre les partitions auront une forme comme celle-ci:
 
 | date | nom | identifiant | latitude | longitude | places occupées | places libres | places total |
 |---|---|---|---|---|---|---|---|
-| 16 septembre 2020 14:57 | 001 Rue Jules Ferry - Gare Saint-Roch | 001 | 43.605366 | 3.881346 | 10 | 2 | 12 |
-| 16 septembre 2020 14:56 | 001 Rue Jules Ferry - Gare Saint-Roch | 001 | 43.605366 | 3.881346 | 10 | 2 | 12 |
-| 16 septembre 2020 14:55 | 001 Rue Jules Ferry - Gare Saint-Roch | 001 | 43.605366 | 3.881346 | 9 | 3 | 12 |
-| 16 septembre 2020 14:54 | 001 Rue Jules Ferry - Gare Saint-Roch | 001 | 43.605366 | 3.881346 | 7 | 5 | 12 |
-| 16 septembre 2020 14:53 | 001 Rue Jules Ferry - Gare Saint-Roch | 001 | 43.605366 | 3.881346 | 7 | 5 | 12 |
-| 16 septembre 2020 14:52 | 001 Rue Jules Ferry - Gare Saint-Roch | 001 | 43.605366 | 3.881346 | 1 | 9 | 12 |
+| 16 sept 2020 14:57 | Rue Jules Ferry - Gare Saint-Roch | 001 | 43.605366 | 3.881346 | 10 | 2 | 12 |
+| 16 sept 2020 14:56 | Rue Jules Ferry - Gare Saint-Roch | 001 | 43.605366 | 3.881346 | 10 | 2 | 12 |
+| 16 sept 2020 14:55 | Rue Jules Ferry - Gare Saint-Roch | 001 | 43.605366 | 3.881346 | 9 | 3 | 12 |
+| 16 sept 2020 14:54 | Rue Jules Ferry - Gare Saint-Roch | 001 | 43.605366 | 3.881346 | 7 | 5 | 12 |
+| 16 sept 2020 14:53 | Rue Jules Ferry - Gare Saint-Roch | 001 | 43.605366 | 3.881346 | 7 | 5 | 12 |
+| 16 sept 2020 14:52 | Rue Jules Ferry - Gare Saint-Roch | 001 | 43.605366 | 3.881346 | 1 | 9 | 12 |
 
 - J'ai uniquement ajouté la date pour conserver un historique des données.
 - Au sujet de l'évidente duplication des informations il y a différentes manière de gérer ça, ça dépend beaucoup de la base de données utilisé. Les bases de données orientées colonnes n'ont particulièrement pas de problème avec des colonnes comme cela. Elles dédupliquent "naturellement" ces données.
-
-
 
 # Sujets d'exposé
 
@@ -121,8 +119,8 @@ Exemple de données :
 
 | date | point de vente | montant total | nombre articles | détails |
 |---|---|---|---|---|
-| 18 septembre 2020 | | 12€37 | 3 | [2 ampoules, un tournevis] |
-| 15 septembre 2020 | | 24€50 | 2 | [yaourt, fromage] |
+| 18 sept 2020 | | 12€37 | 3 | [2 ampoules, un tournevis] |
+| 15 sept 2020 | | 24€50 | 2 | [yaourt, fromage] |
 
 ## Sujet 2: Scores jeux videos
 
