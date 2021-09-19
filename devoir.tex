@@ -1,0 +1,136 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{fullpage}
+\usepackage[top=2cm, bottom=4.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{lastpage}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+
+\hypersetup{%
+  colorlinks=true,
+  linkcolor=blue,
+  linkbordercolor={0 0 1}
+}
+ 
+\renewcommand\lstlistingname{Algorithm}
+\renewcommand\lstlistlistingname{Algorithms}
+\def\lstlistingautorefname{Alg.}
+
+\lstdefinestyle{Python}{
+    language        = Python,
+    frame           = lines, 
+    basicstyle      = \footnotesize,
+    keywordstyle    = \color{blue},
+    stringstyle     = \color{green},
+    commentstyle    = \color{red}\ttfamily
+}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+
+% Edit these as appropriate
+\newcommand\course{Base de données NoSQL}
+\newcommand\hwnumber{1}                  % <-- homework number
+%\newcommand\NetIDa{netid19823}           % <-- NetID of person #1
+%\newcommand\NetIDb{netid12038}           % <-- NetID of person #2 (Comment this line out for problem sets)
+
+\pagestyle{fancyplain}
+\headheight 35pt
+\lhead{Base de données NoSQL}
+%\lhead{\NetIDa\\\NetIDb}                 % <-- Comment this line out for problem sets (make sure you are person #1)
+\chead{\textbf{\Large Devoir \hwnumber}}
+\rhead{\today}
+\lfoot{}
+\cfoot{}
+\rfoot{\small\thepage}
+\headsep 1.5em
+
+\begin{document}
+
+\section*{Théorème CAP}
+
+Pour chacune des situations suivantes, indiquez quelle garantie peut être relâchée (parmis la consistance, la disponibilité et le partitionnement).
+
+\begin{enumerate}
+\item Les données peuvent être servies sur un seul serveur.
+\item Les données sont trop volumineuses pour être servies sur un seul serveur, et ne sont pas modifiées après leur création.
+\item Les données sont trop volumineuses pour être servies sur un seul serveur et doivent être interrogées dans un certain délai.
+\end{enumerate}
+
+\section*{Objets trouvés à la SNCF}
+
+Données (uniquement pour information)~: \url{https://ressources.data.sncf.com}
+
+Quelques exemples de données~:
+
+\begin{tabular}{ | c | c | c | c | c | c |}
+\hline
+Date & Type d'objets & Nature d'objets & Gare & Code UIC \\ \hline
+16 sept 21 14:57 & Bagagerie & Valise, sac sur roulettes & Cherbourg & 0087444877 \\ \hline
+16 sept 21 14:51 & Vêtements, chaussures & Autres vêtements & Cherbourg & 0087444877 \\ \hline
+16 sept 21 14:50 & Vêtements, chaussures & Chaussures & Montparnasse & 0087391003 \\ \hline
+16 sept 21 14:47 & Optique & Lunettes & Montparnasse & 0087391003 \\ \hline
+\end{tabular}
+
+Considérez que l'on vous donne en temps réel les nouveaux objets trouvés.
+
+\subsection*{Questions}
+
+\begin{enumerate}
+\item Trouvez une clef de partitionnement valide (en expliquant)
+\item À partir des quelques exemples utilisez votre clef de partitionnement pour les regrouper
+\item Pour la suite nous allons interroger la base tel que vous l'avez organisé. Pour chaque question indiquez
+si la requête s'effectue "directement" sur une partition ou si plusieurs partitions doivent être interrogées.
+Dans ce dernier cas indiquez distinctement ce qu'il y a à faire dans la partie map et dans la partie reduce~:
+    \begin{enumerate}
+	\item Quels sont les objets trouvés aujourd'hui~?
+	\item Quel jour de la semaine trouvons-nous le plus d'objets~?
+	\item Quel jour de la semaine trouvons-nous le plus d'objets du type vêtement~?
+	\item Quels sont les objets trouvés à Paris Gare de Lyon~?
+	\item Combien d'objets trouvés le 2 janvier 2020 ont été restitués~?
+    \end{enumerate}
+\end{enumerate}
+
+\section*{Disponibilité des places Vélomagg}
+
+Données (uniquement pour information)~:\\
+\url{https://data.montpellier3m.fr/dataset/disponibilite-des-places-velomagg-en-temps-reel}
+
+Quelques exemple de données~:
+
+\begin{tabular}{ | c | c | c | c | c | c | c |}
+\hline
+nom & identifiant & latitude & longitude & occupées & libres & total \\ \hline
+Jules Ferry - Saint-Roch & 001 & 43.605366 & 3.881346 & 10 & 2 & 12 \\ \hline
+Comédie & 002 & 43.608148 & 3.878778 & 9 & 15 & 24 \\ \hline
+Esplanade & 003 & 43.609478 & 3.881293 & 18 & 14 & 32 \\ \hline
+Hôtel de Ville & 004 & 43.599088 & 3.894866 & 6 & 10 & 16 \\ \hline
+Corum & 005 & 43.613989 & 3.881600 & 11 & 1 & 12 \\ \hline
+Albert 1er - St Charles & 006 & 43.616768 & 3.873375 & 16 & 15 & 31 \\ \hline
+Foch & 007 & 43.610989 & 3.873345 & 7 & 1 & 8 \\ \hline
+\end{tabular}
+
+Considérez que toutes les minutes, vous recevez la liste complète à jour.
+
+\subsection*{Questions}
+
+\begin{enumerate}
+\item Trouvez une clef de partitionnement valide (en expliquant)
+\item À partir des quelques exemples utilisez votre clef de partitionnement pour les regrouper
+\item Pour la suite nous allons interroger la base tel que vous l'avez organisé.
+ Pour chaque question indiquez si la requête s'effectue "directement" sur une partition ou
+ si plusieurs partitions doivent être interrogées. Dans ce dernier cas indiquez distinctement
+ ce qu'il y a à faire dans la partie map et dans la partie reduce~:
+    \begin{enumerate}
+	\item Combien de places sont disponibles à l'Hotel de Ville~?
+	\item Je suis à la latitude x et longitude y où puis-je trouver une place~?
+	\item Quel est le graphique d'occupation de la station Place Albert 1er - St Charles~?
+    \end{enumerate}
+\end{enumerate}
+
+\end{document}
