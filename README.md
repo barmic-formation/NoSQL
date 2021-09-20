@@ -10,3 +10,4 @@ Formation NoSQL pour l'université de Montpelier
 ## Jeudi 23 septembre
 
 - matin : [Sujets](sujets.md) et cours avancé
+http://ns561865.ip-192-99-11.net:9091/
