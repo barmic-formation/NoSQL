@@ -34,6 +34,12 @@ Le comportement que l'on cherche à maximiser :
 
 ![tableau3](img/tableau3.png)
 
+#### BASE
+
+- _Basically Available_ : quelle que soit la charge de la base de données, le système garantie un taux de disponibilité de la donnée
+- _Soft state_ : l'état de la base peut changer, il n'a pas à être cohérent continuellement
+- _Eventual consistency_ : la cohérence à terme. La base deviendra au final, mais on ne peut pas s'appuyer sur quand est-ce qu'elle le sera
+
 ## Map/Reduce
 
 Lorsque l'on utilise du partitionnement il n'y a pas de difficulté à faire les calculs que l'on souhaite tant que l'on reste au sein d'une seule partition. Par contre il arrive de devoir travailler sur l'ensemble des données de la base. Pour cela on utilise Map/Reduce.
@@ -49,51 +55,32 @@ Lorsque l'on utilise du partitionnement il n'y a pas de difficulté à faire les
 
 Attention les calculs organisés en `map`/`reduce` doivent être organisés avec précaution. Par exemple on essaiera de n'effectuer des divisions qu'au dernier moments.
 
-**Exemple**:
 
-Si nous avons les 3 shards suivant :
+## Type de base de données NoSQL
 
-Shard 1 :
-- ligne 1 → 0
-- ligne 2 → 3
-- ligne 3 → 1
-- ligne 4 → 2
-- ligne 5 → 0
-- ligne 6 → 4
-- ligne 7 → 3
+### Document
 
-Shard 2 :
-- ligne 1 → 0
-- ligne 2 → 4
-- ligne 3 → 2
-- ligne 4 → 0
-- ligne 5 → 0
-- ligne 6 → 1
-- ligne 7 → 0
+La plus répandu est mongo. Leur principal caractéristique est de ne pas avoir de schema.
 
-Shard 3 :
-- ligne 1 → 4
-- ligne 2 → 3
-- ligne 3 → 2
-- ligne 4 → 1
-- ligne 5 → 0
-- ligne 6 → 4
-- ligne 7 → 3
+### Orienté colonne
 
-Quel est la moyenne de toutes les lignes ?
+Le principe est de ne pas stocker les données en ligne, mais en colonne.
+Ainsi on a un stockage par type (on va stocker des entiers ensemble, des textes ensemble etc).
+De plus les requêtes qui ne récupèrent pas une colonne ne manipule à aucun moment les colonnes non utilisées.
 
+### clef-valeur
 
-# Exercice d'exemple
+Souvent ses base de données sont en mémoire uniquement.
+Elle servent souvent de cache, mais peuvent aussi servir de base de données principales.
+Elles s'utilisent aussi simplement qu'on l'imagine.
 
-| article | type | date | stock | prix | description |
-|---|---|---|---|---|---|
-| aspirateur Rowenta BPL24 | aspirateur | 25 septembre | 142 | 65 | aspirateur trop trop bien |
-| montre Lexibook | montre | 25 septembre | 422 | 10 | montre de ouf |
-| montre Lexibook | montre | 24 septembre | 500 | 10 | montre de ouf |
+### Graph
 
-- choisir une clef de partitionnement
-- requêtes possibles :
-  - quel est le stock d'aspirateur rowenta aujourd'hui ?
-  - prix moyen des articles ?
-  - quels sont les articles bientôt en rupture de stock ?
-  - comment évolue le prix des montres ?
+Permet d'utiliser des algo de graph directement dans la base.
+
+![graph](img/graph.png)
+
+### Timeseries
+
+Sert à stocker des données temporelles.
+Très efficace en insertion et permet de faire des requêtes continues (qui retourne toutes les données au fure et à mesure).
