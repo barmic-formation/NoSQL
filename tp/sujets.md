@@ -1,6 +1,6 @@
 # Sujets d'exposé
 
-Voici une liste de sujets possibles pour le rendu du 16 octobre 2020.
+Voici une liste de sujets possibles pour le rendu du 23 octobre 2021.
 
 Décrire ce qu'il y a à faire
 - Une présentation
