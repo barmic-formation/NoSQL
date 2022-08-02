@@ -32,7 +32,7 @@ Le comportement que l'on cherche à maximiser :
 
 ### Théorème CAP
 
-![tableau3](img/tableau3.png)
+![tableau3](img/tableau3.webp)
 
 #### BASE
 
@@ -49,7 +49,7 @@ Lorsque l'on utilise du partitionnement il n'y a pas de difficulté à faire les
 - `map` effectue un calul au sein d'une partition (ou d'une partie d'une partition) et retourne un élément
 - `reduce` prends les éléments retournés par `map` et les combine pour donner un unique dernier résultat
 
-![tableau1](img/tableau1.png)
+![tableau1](img/tableau1.webp)
 
 ### Problématiques
 
@@ -78,7 +78,7 @@ Elles s'utilisent aussi simplement qu'on l'imagine.
 
 Permet d'utiliser des algo de graph directement dans la base.
 
-![graph](img/graph.png)
+![graph](img/graph.webp)
 
 ### Timeseries
 
