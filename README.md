@@ -2,12 +2,22 @@
 
 Formation NoSQL pour l'université de Montpelier
 
-## Mercredi 22 septembre
+## Vendredi 9 septembre
 
-- matin : [Cours partitionnement et map/reduce](cours/sharding.md) et [Cours _eventual consistency_](cours/eventual_consistency.md)
-- après-midi : [mongo](tp/mongo.md) & [cassandra](tp/cassandra.md)
+Cours : [Cours partitionnement et map/reduce](cours/sharding.md)
 
-## Jeudi 23 septembre
+TD : partitionnement et/ou map/reduce
 
-- matin : [Sujets](sujets.md) et cours avancé
-http://ns561865.ip-192-99-11.net:9091/
+TP : Mongo
+
+## Lundi 12 septembre
+
+Cours : [Cours _eventual consistency_](cours/eventual_consistency.md)
+
+TD : [modélisation](tp/modelisation.md)
+
+TP : Cassandra
+
+# Sujet noté
+
+[Sujets](sujets.md)
