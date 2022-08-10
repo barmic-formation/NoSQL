@@ -30,15 +30,7 @@ Le comportement que l'on cherche à maximiser :
 - lors des écritures → chaque écriture s'exécute sur une partition différentes pour utiliser tous les serveurs de notre base de données
 
 
-### Théorème CAP
-
-![tableau3](img/tableau3.webp)
-
-#### BASE
-
-- _Basically Available_ : quelle que soit la charge de la base de données, le système garantie un taux de disponibilité de la donnée
-- _Soft state_ : l'état de la base peut changer, il n'a pas à être cohérent continuellement
-- _Eventual consistency_ : la cohérence à terme. La base deviendra au final, mais on ne peut pas s'appuyer sur quand est-ce qu'elle le sera
+![tableau1](img/tableau1.webp)
 
 ## Map/Reduce
 
@@ -46,15 +38,57 @@ Lorsque l'on utilise du partitionnement il n'y a pas de difficulté à faire les
 
 2 étapes :
 
-- `map` effectue un calul au sein d'une partition (ou d'une partie d'une partition) et retourne un élément
-- `reduce` prends les éléments retournés par `map` et les combine pour donner un unique dernier résultat
+1. on calcul pour chaque données de la base (vue comme un couple key/value la key est l'identifiant de la donnée et la value et l'ensemble) un ensemble de couple key/value (ça peut être un ensemble vide, un seul élément ou plusieurs). Les types de la clef et de la valeurs ne sont pas dépendant des types en entrée. Ce calcul 
+2. on fourni ces ensembles de key/value à une fonction reduce. Pour chaque key différente, on execute la fonction reduce avec la clef et un itérateur sur l'ensemble des valeurs
 
-![tableau1](img/tableau1.webp)
+```java
+/**
+ * Effectue un calcul local pour chaque donnée de la base
+ * @param key   id de la donnée en base
+ * @param value donnée de la base (peut être un objet complex, une row,…)
+ * @return ensemble de key/value
+ */
+Collection<Pair<K, V>> map(K1 key, V1 value) { /*...*/ }
 
-### Problématiques
+/**
+ * Effectue le calcul du résultat à partir de l'ensemble des résultats de l'étape map()
+ * @param key 
+ * @param values itérateur sur l'ensemble des données resultant du map()
+ */
+Pair<K2, R> reduce(K key, Iterator<V> values) { /*...*/ }
+```
+
+**Attention**
 
 Attention les calculs organisés en `map`/`reduce` doivent être organisés avec précaution. Par exemple on essaiera de n'effectuer des divisions qu'au dernier moments.
 
+**Exemple**
+
+Données :
+
+| id | Région | Nom | Population | Superficie (km2) |
+|---|---|---|---|---|
+| 1 | Ile de France | Paris | 2 165 423 | 105,40 |
+| 2 | Auvergne-Rhone-Alpes | Lyon | 522 969 | 47,87 |
+| 3 | Occitanie | Montpellier | 295 542 | 56,88 |
+
+On cherche la densité moyenne des grandes villes par région. Résultat attendu :
+
+| Région | Densité moyenne des villes |
+|---|---|
+| PACA | 5000 hab/km2 |
+| Corse | 2000 hab/km2 |
+
+_Étapes_
+
+_Map_ pour chaque ville on va recevoir l'id et la raw. On va retourner pour chaque ville un couple Région → (Population, Superficie).
+
+_Reduce_ sera executé pour chaque région et va recevoir en paramètre :
+
+- la région
+- un itérateur sur les couples population / superficie
+
+et va à chaque fois retourner un couple région / dénsité moyenne
 
 ## Type de base de données NoSQL
 
