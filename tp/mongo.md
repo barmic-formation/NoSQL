@@ -7,7 +7,7 @@ Nous utiliserons le client Studio 3T disponible à l'adresse : https://robomon
 Une fois lancé créé une nouvelle connexion avec l'URL :
 
 ```
-mongo_url
+mongodb://foo:<pwd>@ns561865.ip-192-99-11.net:27017/admin
 ```
 
 # Exercice 1

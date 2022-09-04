@@ -41,21 +41,22 @@ Lorsque l'on utilise du partitionnement il n'y a pas de difficulté à faire les
 1. on calcul pour chaque données de la base (vue comme un couple key/value la key est l'identifiant de la donnée et la value et l'ensemble) un ensemble de couple key/value (ça peut être un ensemble vide, un seul élément ou plusieurs). Les types de la clef et de la valeurs ne sont pas dépendant des types en entrée. Ce calcul 
 2. on fourni ces ensembles de key/value à une fonction reduce. Pour chaque key différente, on execute la fonction reduce avec la clef et un itérateur sur l'ensemble des valeurs
 
-```java
-/**
- * Effectue un calcul local pour chaque donnée de la base
- * @param key   id de la donnée en base
- * @param value donnée de la base (peut être un objet complex, une row,…)
- * @return ensemble de key/value
- */
-Collection<Pair<K, V>> map(K1 key, V1 value) { /*...*/ }
 
-/**
- * Effectue le calcul du résultat à partir de l'ensemble des résultats de l'étape map()
- * @param key 
- * @param values itérateur sur l'ensemble des données resultant du map()
- */
-Pair<K2, R> reduce(K key, Iterator<V> values) { /*...*/ }
+```python
+def map(key: K1, value: V1): -> list[tuple[K, V]]
+    """
+    Effectue un calcul local pour chaque donnée de la base
+    @param key   id de la donnée en base
+    @param value donnée de la base (peut être un objet complex, une row,…)
+    @return ensemble de key/value
+    """
+
+def reduce(key: K, values: Generator[V]): -> typle[K2, R]
+    """
+    Effectue le calcul du résultat à partir de l'ensemble des résultats de l'étape map()
+    @param key 
+    @param values itérateur sur l'ensemble des données resultant du map()
+    """
 ```
 
 **Attention**
