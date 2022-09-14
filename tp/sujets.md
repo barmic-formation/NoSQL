@@ -2,7 +2,7 @@
 
 Voici une liste de sujets possibles pour le rendu du 30 septembre 2022.
 
-Pour 2 sujet que vous aurez choisi par 2 ou 3 personnes maximum, vous devez :
+Pour 2 sujets que vous aurez choisi par 2 ou 3 personnes maximum, vous devez :
 
 - choisir une stratégie de partitionnement
   - Expliquez comment vous l'avez choisi
