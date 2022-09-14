@@ -16,4 +16,4 @@ Formation NoSQL pour l'université de Montpelier
 
 # Sujet noté
 
-[Sujets](sujets.md) à rendre pour le 30 septembre
+[Sujets](tp/sujets.md) à rendre pour le 30 septembre
