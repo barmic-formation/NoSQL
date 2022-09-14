@@ -1,4 +1,4 @@
-# Sujets d'exposé
+# Sujets
 
 Voici une liste de sujets possibles pour le rendu du 30 septembre 2022.
 
