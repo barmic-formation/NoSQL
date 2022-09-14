@@ -11,9 +11,9 @@ Formation NoSQL pour l'université de Montpelier
 ## Lundi 12 septembre
 
 - [Cours _eventual consistency_](cours/eventual_consistency.md)
-- [Modélisation](tp/modelisation.md)
+- [Modélisation](tp/modelisation.md) ([correction](tp/reponses.md))
 - [Cassandra](tp/cassandra.md)
 
 # Sujet noté
 
-[Sujets](sujets.md)
+[Sujets](sujets.md) à rendre pour le 30 septembre

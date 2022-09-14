@@ -17,7 +17,7 @@ Considérez que l'on vous donne en temps réel les nouveaux objets trouvés.
 
 ### Questions
 
- 1. Trouvez une clef de partitionnement valide (en expliquant)
+ 1. Trouvez une stratégie de partitionnement (en expliquant)
  2. À partir des quelques exemples utilisez votre clef de partitionnement pour les regrouper
  3. Pour la suite nous allons interroger la base tel que vous l'avez organisé. Pour chaque question indiquez si la requête s'effectue "directement" sur une partition ou si plusieurs partitions doivent être interrogées. Dans ce dernier cas indiquez distinctement ce qu'il y a à faire dans la partie map et dans la partie reduce :
 	 1. Quels sont les objets trouvés aujourd'hui ?
@@ -46,9 +46,27 @@ Considérez que toutes les minutes, vous recevez la liste complète à jour.
 
 ### Questions
 
- 1. Trouvez une clef de partitionnement valide (en expliquant)
+ 1. Trouvez une stratégie de partitionnement (en expliquant)
  2. À partir des quelques exemples utilisez votre clef de partitionnement pour les regrouper
  3. Pour la suite nous allons interroger la base tel que vous l'avez organisé. Pour chaque question indiquez si la requête s'effectue "directement" sur une partition ou si plusieurs partitions doivent être interrogées. Dans ce dernier cas indiquez distinctement ce qu'il y a à faire dans la partie map et dans la partie reduce :
 	 1. Combien de places sont disponibles à l'Hotel de Ville ?
 	 2. Je suis à la latitude x et longitude y où puis-je trouver une place ?
 	 3. Quel est le graphique d'occupation de la station Place Albert 1er - St Charles ?
+
+## Twitter
+
+Twitter est une réseau social permettant :
+
+- de publier de courts messages
+- de plublier des commentaires aux messages déjà publiés
+- d'aimer des messages
+- de suivre d'autres utilisateurs
+- de republier des messages d'autres utilisateurs (retwitt)
+
+Nous voudrions stocker ses informations dans une base de données orientée graph.
+
+Proposez une modélisation.
+
+- indiquez ce que représente chaque nøud du graph
+  - indiquez les données qui seront stockées dans les nøuds
+- indiquez ce que représente les arrêtes

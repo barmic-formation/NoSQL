@@ -1,15 +1,17 @@
 # Sujets d'exposé
 
-Voici une liste de sujets possibles pour le rendu du 23 octobre 2021.
+Voici une liste de sujets possibles pour le rendu du 30 septembre 2022.
 
-Décrire ce qu'il y a à faire
-- Une présentation
-- Choix de la clef de partitionnement
-	- Comment elle a était choisie ?
-	- Quels sont les impacts ?
-	- Qu'est-ce qui a était prévu ?
-- Montrer ce que donne le partitionnement sur des exemples
-- Montrer pour des exemples de requêtes pertinentes
+Pour 2 sujet que vous aurez choisi par 2 ou 3 personnes maximum, vous devez :
+
+- choisir une stratégie de partitionnement
+  - Expliquez comment vous l'avez choisi
+  - Comment elle a était choisie ?
+  - Si vous avez dû faire un choix entre plusieurs stratégies indiquez les avantages et inconvénients
+- Montrer ce que donne le partitionnement sur quelques exemples que vous aurez choisi
+- Montrer des exemples de requêtes (sous la forme de question)
+ - indiquez si pour y répondre vous pouvez rester au sein d'une partition ou plusieurs
+ - si plusieurs, décrivez ce que doit faire la fonction `map()` et la fonction `reduce()`
 
 ## Sujet 1: Tiquets de caisse
 
