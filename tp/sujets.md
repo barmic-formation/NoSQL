@@ -10,8 +10,8 @@ Pour 2 sujet que vous aurez choisi par 2 ou 3 personnes maximum, vous devez :
   - Si vous avez dû faire un choix entre plusieurs stratégies indiquez les avantages et inconvénients
 - Montrer ce que donne le partitionnement sur quelques exemples que vous aurez choisi
 - Montrer des exemples de requêtes (sous la forme de question)
- - indiquez si pour y répondre vous pouvez rester au sein d'une partition ou plusieurs
- - si plusieurs, décrivez ce que doit faire la fonction `map()` et la fonction `reduce()`
+  - indiquez si pour y répondre vous pouvez rester au sein d'une partition ou plusieurs
+  - si plusieurs, décrivez ce que doit faire la fonction `map()` et la fonction `reduce()`
 
 ## Sujet 1: Tiquets de caisse
 
