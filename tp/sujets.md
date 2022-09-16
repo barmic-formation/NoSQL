@@ -13,6 +13,8 @@ Pour 2 sujets que vous aurez choisi par 2 ou 3 personnes maximum, vous devez :
   - indiquez si pour y répondre vous pouvez rester au sein d'une partition ou plusieurs
   - si plusieurs, décrivez ce que doit faire la fonction `map()` et la fonction `reduce()`
 
+Le rendu est attendu pour le 30 septembre à envoyer à l'adresse michel.barret@viseo.com
+
 ## Sujet 1: Tiquets de caisse
 
 Exemple de données :
